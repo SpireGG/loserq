@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useHead({
+	title: 'Loser Queue calculator',
+})
 </script>
 
 <template>
@@ -27,11 +30,12 @@ main {
 	background-color: rgb(42 67 101 / 100%);
 }
 .content {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	z-index: 1;
+	z-index: 2;
 	height: 100%;
 }
 </style>
