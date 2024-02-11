@@ -96,7 +96,7 @@ button {
 	border-style: solid;
 	border-color: #e84855;
 	transition: all 0.2s ease-in-out;
-	&:hover {background-color: rgb(60 64 71 / 70%);}
+	&:hover {background-color: rgb(60 64 71 / 70%);color:white;}
 	&.primary {
 		background-color: #e84855;
 		border-color: transparent;

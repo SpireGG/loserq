@@ -68,7 +68,7 @@ button {
 	border-style: solid;
 	border-color: #56e39f;
 	transition: all 0.2s ease-in-out;
-	&:hover {background-color: rgb(60 64 71 / 70%);}
+	&:hover {background-color: rgb(60 64 71 / 70%);color:white;}
 	&.primary {
 		background-color: #56e39f;
 		border-color: transparent;
