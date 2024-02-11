@@ -10,6 +10,7 @@ useHead({
 		<div class="content">
 			<NuxtPage />
 		</div>
+		<footer>Created by <a href="https://twitter.com/Chypriote" target="_blank">@Chypriote</a></footer>
 	</main>
 </template>
 
@@ -37,5 +38,19 @@ main {
 	justify-content: center;
 	z-index: 2;
 	height: 100%;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 1rem;
+	z-index: 2;
+	a {
+		color: #aaa;
+		margin-top: 2rem;
+		cursor: pointer;
+		text-decoration: none;
+		&:hover {color: white;}
+	}
 }
 </style>

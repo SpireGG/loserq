@@ -47,6 +47,10 @@ const goNext = () => {
 		border-color: #999;
 		background-color: rgb(23 49 79 / 100%);
 	}
+	@media screen and (width < 35rem){
+		flex-direction: column;
+		height: auto;
+	}
 }
 input:first-of-type {
 	border-top-left-radius: .5rem;
@@ -78,9 +82,21 @@ input[type="text"], select, button {
 	border: none;
 	color: #fff;
 	&:focus {outline: none}
+	@media screen and (width < 40rem){
+		width: 100%;
+		border-radius: 0;
+		height: 2rem;
+		padding: 0;
+		border-bottom: 1px solid #999;
+	}
 }
 input[type="text"], select {
 	border-right: 1px solid #999;
+	@media screen and (width < 40rem){border-right: none;}
 }
 .tagline {width: 5rem;}
+
+@media screen and (width < 40rem){
+	button {border-bottom: 0;}
+}
 </style>

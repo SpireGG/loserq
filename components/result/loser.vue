@@ -52,7 +52,7 @@ header {
 footer {
 	margin-top: 2rem;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 button {
 	cursor: pointer;

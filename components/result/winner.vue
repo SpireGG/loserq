@@ -14,7 +14,6 @@ const home = () => {
 		<header>{{ name }}<span class="tagline">#{{ tagline }}</span></header>
 		<div class="content">You are in Winner Queue</div>
 		<footer>
-			<button>Share</button>
 			<button @click="home()">Try another summoner</button>
 		</footer>
 	</div>
@@ -52,7 +51,7 @@ header {
 footer {
 	margin-top: 2rem;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 button {
 	cursor: pointer;
