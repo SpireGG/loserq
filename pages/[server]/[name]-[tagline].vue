@@ -22,7 +22,7 @@ const process = () => {
 	}
 
 	processing.value = false
-	winner.value = Math.random() < 0.5
+	winner.value = Math.random() < 0.3
 }
 onMounted(() => {
 	setTimeout(() => process(), statuses[index.value].duration)

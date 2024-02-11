@@ -25,6 +25,8 @@ const home = () => {
 				<li>Accept the losses and wait to naturally get back to winner queue</li>
 				<li>Get better at the game, allowing you to carry games despite your win trading teammates</li>
 				<li>Ask a better player to play on your behalf, possibly paying them, in order to avoid losses</li>
+				<li>Sell your account and buy a new one, that will hopefully stay out of loser queue long enough</li>
+				<li>Consider playing another game where the developer did not implement no loser queue</li>
 			</ul>
 		</div>
 		<footer>
