@@ -12,9 +12,22 @@ const home = () => {
 <template>
 	<div class="card">
 		<header>{{ name }}<span class="tagline">#{{ tagline }}</span></header>
-		<div class="content">You are in Loser Queue</div>
+		<div class="content">
+			<h2>You are in Loser Queue</h2>
+			<p class="heading">What does it mean ?</p>
+			<p>
+				The matchmaking algorithm will give you worst teammates in order to force losses on you. The quality of your games will be a lot worse: your teammates will probably be inters, paid actors, or players that do not belong in your current rank.
+				This is done by Riot Games in order to make sure that you keep playing the game, trying to force you around a ~50% winrate.
+			</p>
+			<p class="heading">How to escape loser queue ?</p>
+			<p>Since loser queue is forced onto you by Riot Games, there are no solutions other than playing games in order to escape Loser Queue. Here are the currently known solutions to get out of loser queue:</p>
+			<ul>
+				<li>Accept the losses and wait to naturally get back to winner queue</li>
+				<li>Get better at the game, allowing you to carry games despite your win trading teammates</li>
+				<li>Ask a better player to play on your behalf, possibly paying them, in order to avoid losses</li>
+			</ul>
+		</div>
 		<footer>
-			<button>Share</button>
 			<button @click="home()">Try another summoner</button>
 		</footer>
 	</div>
@@ -31,6 +44,7 @@ const home = () => {
 	box-shadow: 2px 4px 10px rgba(0 0 0 / 25%);
 	width: 100%;
 	border: 5px solid #e84855;
+	max-width: 35vw;
 }
 header {
 	display: flex;
@@ -46,13 +60,25 @@ header {
 	}
 }
 .content {
-	font-size: 1.5rem;
-	text-align: center;
+	h2 {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.heading {
+		font-weight: bold;
+		margin: 1rem 0 .5rem;
+	}
 }
 footer {
 	margin-top: 2rem;
 	display: flex;
 	justify-content: center;
+}
+ul {
+	margin-top: .5rem;
+	margin-left: 1.5rem;
+	list-style-type: disc;
+	li {margin-bottom: .25rem;}
 }
 button {
 	cursor: pointer;

@@ -30,6 +30,7 @@ const home = () => {
 	box-shadow: 2px 4px 10px rgba(0 0 0 / 25%);
 	width: 100%;
 	border: 5px solid #56e39f;
+	max-width: 35vw;
 }
 header {
 	display: flex;
