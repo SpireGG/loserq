@@ -21,7 +21,7 @@ const process = () => {
 		return
 	}
 
-	processing.value = true
+	processing.value = false
 	winner.value = Math.random() < 0.5
 }
 onMounted(() => {
